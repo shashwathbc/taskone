@@ -2,16 +2,18 @@
   background-color: black;
 }
 
-// NAVBAR : 
-nav{
+@mixin theme($theme: DarkGray) {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+// NAVBAR : 
+nav{
+  @include theme;
   width: 100%;
   ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include theme;
   }
   
   li{
@@ -74,7 +76,5 @@ nav{
 //FOOTER : 
 footer{
   color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  @include theme;
 }

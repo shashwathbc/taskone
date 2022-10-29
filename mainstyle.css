@@ -66,6 +66,6 @@ nav a {
 footer {
   color: white;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-around;
 }/*# sourceMappingURL=mainstyle.css.map */
